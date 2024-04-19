@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Rumble Brave;
+    src: url("Rumble Brave.otf");
+    
+}
+@font-face {
+    font-family: UrbanSlavic;
+    src: url("UrbanSlavic.otf");
+}
+* {
+     margin: 0;
+     padding: 0;
+}
+.linksMain {
+    display: flex;
+    flex-direction: row;
+    position: relative; 
+    justify-content:flex-end;
+}
+
+.imageContainer {
+    position: absolute; /* relative a linksMain */
+    right: 0; 
+    z-index: -1; /* en arriere */
+    margin-top: 40%;}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#web, #cv, #graphisme {
+    margin-right: 5%;
+    font-family: Rumble Brave;
+    color: white;
+    font-size: min(5.3vw, 53vh);
+}
+        @media (max-width : 500px) {
+            body {
+                padding-left: 3%;
+                padding-right: 3%;
+            }
+            #web, #cv, #graphisme{
+                font-size: min(8.3vw, 53vh);
+                margin-right: 5%;
+                font-family: Rumble Brave;
+                color: white;
+            }
+        }
+.linksMainFlex {
+    position: absolute; /* relative a imageContainer */
+    display: flex;
+    flex-direction: column;
+    margin-top: 40%;
+    height: 7vh;
+}
+/*web*/
+.miniatureWeb {
+    border: solid 2px black;
+    width: 10%;
+    height: 7%;
+}
+.textWeb {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1vw;
+    color: black;
+}
+
+#languageSelect {
+    margin: 10% auto 0% 80%;
+    border: none;
+    font-size: min(2.5vw, 53vh);
+}
+.about {
+    font-size: 2vw;
+    height: 20%;
+    color: black;
+    max-width: 29vw;
+    margin-top: 40vw;
+}
+        @media (max-width : 500px) {
+            .about {
+                font-size: 3vw;
+                height: 20%;
+                color: black;
+                max-width: 45vw;
+                margin-top: 65vw;
+            }
+        }
+.webPart {
+    width: 70vh;
+    height: 90vh;
+    background-color: green;
+    display: none;}
+}

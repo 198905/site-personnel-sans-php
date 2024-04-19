@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    
+    <title>folder</title>
+</head>
+<body class="site">
+    <span>
+        <select id="languageSelect">
+            <option value="fr">fr</option>
+            <option value="en">en</option>
+            <option value="ru">ru</option>
+        </select>
+    </span>
+    <nav class="linksMain">
+        <div class="imageContainer">
+            <img src="img/1.png">
+        </div>
+        <div class="linksMainFlex">
+            <a href="" id="web"></a><!--<a href="">-->
+            <a href="" id="cv"></a>
+            <a href="" id="graphisme"></a>
+        </div>
+        <p class="about"></p>
+    </nav>
+    <div class="webPart">
+    </div>
+    <script src="js.js"></script>
+    <script src="langues.js"></script> 
+    <script>
+        // Get the width of the screen
+        var screenWidth = window.innerWidth;
+        
+        if (screenWidth < 500) {
+            document.querySelector("body").style.padding = "5px";
+        };
+    </script>
+</body>
+</html>
