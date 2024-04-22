@@ -54,8 +54,20 @@ document.getElementById("languageSelect").addEventListener("change", function() 
 });
 });
 var displayWeb = document.querySelector('#web');
+var displayCv = document.querySelector('#cv');
+var displayGraph= document.querySelector('#graphisme');
 var divWeb = document.querySelector('.webPart');
+var divCv = document.querySelector('.cvPart');
+var divGraph = document.querySelector('.graphPart');
 displayWeb.addEventListener('click', function (e) {
     event.preventDefault();
     divWeb.style.display = 'flex';
+   });
+displayCv.addEventListener('click', function (e) {
+    event.preventDefault();
+    divCv.style.display = 'flex';
+   });
+displayGraph.addEventListener('click', function (e) {
+    event.preventDefault();
+    divGraph.style.display = 'flex';
    });
