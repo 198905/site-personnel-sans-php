@@ -94,7 +94,22 @@ body {
         }
 .webPart {
     width: 70vh;
-    height: 90vh;
+    height: 30vh;
     background-color: green;
-    display: none;}
+    display: none;
+}
+.cvPart {
+    width: 70vh;
+    height: 30vh;
+    background-color: red;
+    display: none;
+}
+.graphPart {
+    width: 70vh;
+    height: 30vh;
+    background-color: pink;
+    display: none;
+}
+a {
+    text-decoration: none;
 }
