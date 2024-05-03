@@ -14,8 +14,8 @@
 .linksMain {
     display: flex;
     flex-direction: row;
-    position: relative; 
-    justify-content:flex-end;
+    position: relative;
+    /* justify-content:flex-end; */
 }
 
 .imageContainer {
@@ -35,10 +35,10 @@ body {
     padding-right: 20%;
 }
 #web, #cv, #graphisme {
-    margin-right: 5%;
+    font-size: min(4vw, 53vh);
     font-family: Rumble Brave;
     color: white;
-    font-size: min(5.3vw, 53vh);
+    margin: auto auto auto 20%;
 }
         @media (max-width : 500px) {
             body {
@@ -46,18 +46,19 @@ body {
                 padding-right: 3%;
             }
             #web, #cv, #graphisme{
-                font-size: min(8.3vw, 53vh);
-                margin-right: 5%;
+                font-size: min(6.5vw, 53vh);
                 font-family: Rumble Brave;
                 color: white;
+                margin: auto 5% auto 20%;
             }
         }
 .linksMainFlex {
     position: absolute; /* relative a imageContainer */
     display: flex;
     flex-direction: column;
-    margin-top: 40%;
+    margin-top: 43%;
     height: 7vh;
+    margin-left: 16px;
 }
 /*web*/
 .miniatureWeb {
@@ -77,39 +78,74 @@ body {
     font-size: min(2.5vw, 53vh);
 }
 .about {
-    font-size: 2vw;
+    font-size: 1.7vw;
     height: 20%;
     color: black;
-    max-width: 29vw;
-    margin-top: 40vw;
+    max-width: 45vw;
+    margin-top: 26vw;
+    margin-left: 53%;
+    color:white;
 }
-        @media (max-width : 500px) {
-            .about {
-                font-size: 3vw;
-                height: 20%;
-                color: black;
-                max-width: 45vw;
-                margin-top: 65vw;
-            }
-        }
-.webPart {
+        
+.graphPart, .cvPart, .webPart {
     width: 70vh;
     height: 30vh;
-    background-color: green;
     display: none;
+}
+.webPart {
+    background-color: green;
 }
 .cvPart {
-    width: 70vh;
-    height: 30vh;
     background-color: red;
-    display: none;
 }
 .graphPart {
-    width: 70vh;
-    height: 30vh;
     background-color: pink;
-    display: none;
 }
 a {
     text-decoration: none;
+}
+.titre {
+}
+.nom {
+    font-family: Rumble Brave;
+    font-size: min(9.5vw, 53vh);
+    color:black;
+    position: absolute;
+    margin-top: 8vw;
+}
+.sousTitre {
+    font-family: Rumble Brave;
+    font-size: min(4.5vw, 53vh);
+    color:black;
+    position: absolute;
+    margin-top: 17vw;
+}
+@media (max-width : 500px) {/*///////////////////////////mobile///////////////*/
+            .about {
+                font-size: 3vw;
+                height: 20%;
+                color:white;                margin-top: 42vw;
+            }
+            .nom {
+                margin-top: 20vw;
+            }
+            .about {
+                color:white;
+            }
+            .sousTitre {
+                margin-top: 30vw;
+            }
+        }            
+.logos {
+    display: flex;
+    flex-direction: row;
+    width: 15vw;
+    margin: 5% 50%;
+}
+.logosPictures {
+    padding: 0%;
+    height: 100%;
+}
+.parts {
+    margin-top: 10vw;
 }
