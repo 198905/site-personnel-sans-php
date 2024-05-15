@@ -38,7 +38,7 @@ body {
     font-size: min(4vw, 53vh);
     font-family: Rumble Brave;
     color: white;
-    margin: auto auto auto 30%;
+    margin: auto auto auto 43%;
 }
         @media (max-width : 500px) {
             body {
@@ -80,13 +80,11 @@ body {
 .about {
     font-size: 1.7vw;
     height: 20%;
-    color: black;
+    color: rgb(255, 255, 255);
     max-width: 45vw;
     margin-top: 26vw;
-    margin-left: 53%;
-    color:white;
-}
-        
+    margin-left: 55%;
+}  
 #graphPart, #cvPart, #webPart {
     width: 100%;
     height: 30vh;
@@ -99,15 +97,14 @@ body {
     display: none;   
 }
 .webPartImage {
-    height: 20vw;
+    height: 12vw;
     width: 70vw;
     border: solid 2px black;
 }
 
 
 /*webPart*/
-.webPartShow {
-    background-color: green;
+.webPart {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -130,18 +127,21 @@ a {
 .titre {
 }
 .nom {
-    font-family: Rumble Brave;
     font-size: min(8.1vw, 53vh);
     color:black;
+    margin-top: 9vw;
+}
+.nom, .sousTitre{
+    font-family: Rumble Brave;
+    color:black;
     position: absolute;
-    margin-top: 8vw;
+    margin-left: 1vw;
 }
 .sousTitre {
     font-family: Rumble Brave;
     font-size: min(3.9vw, 53vh);
-    color:black;
-    position: absolute;
     margin-top: 17vw;
+    margin-left: 1vw;
 }
 @media (max-width : 500px) {/*///////////////////////////mobile///////////////*/
             .about {
@@ -170,4 +170,11 @@ a {
     padding: 0%;
     height: 100%;
     margin: 0% 5% 0% 5%;
+}
+.descriptionSite {
+    font-size: 1.7vw;
+    height: 20%;
+    color: black;
+    margin-top: 1vw;
+    margin-left: 3%;
 }
