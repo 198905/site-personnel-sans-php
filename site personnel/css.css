@@ -164,7 +164,7 @@ a {
     display: flex;
     flex-direction: row;
     width: 30vw;
-    margin: 5% 50%;
+    margin: 12% 50%;
 }
 .logosPictures {
     padding: 0%;
@@ -177,4 +177,13 @@ a {
     color: black;
     margin-top: 1vw;
     margin-left: 3%;
+}
+.tech {
+    display: flex;
+    flex-direction: row;
+    height: 5vw;
+    width: 29vw;
+    margin-left: 31%;
+    margin-top: 43%;
+    position: absolute;
 }
