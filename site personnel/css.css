@@ -51,6 +51,7 @@ body {
                 color: white;
                 margin: auto 5% auto 20%;
             }
+            
         }
 .linksMainFlex {
     position: absolute; /* relative a imageContainer */
@@ -80,7 +81,7 @@ body {
 .about {
     font-size: 1.7vw;
     height: 20%;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     max-width: 45vw;
     margin-top: 26vw;
     margin-left: 55%;
@@ -101,22 +102,16 @@ body {
     width: 70vw;
     border: solid 2px black;
 }
-
-
 /*webPart*/
 .webPart {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
 }
-
-
 /*webPart*/
 .cvPart {
     background-color: red;
 }
-
-
 /*webPart*/
 .graphPart {
     background-color: pink;
@@ -143,6 +138,15 @@ a {
     margin-top: 17vw;
     margin-left: 1vw;
 }
+.tech {
+    display: flex;
+    flex-direction: row;
+    height: 5vw;
+    width: 29vw;
+    margin-left: 31%;
+    margin-top: 43%;
+    position: absolute;
+}
 @media (max-width : 500px) {/*///////////////////////////mobile///////////////*/
             .about {
                 font-size: 3vw;
@@ -158,6 +162,20 @@ a {
             }
             .sousTitre {
                 margin-top: 30vw;
+            }
+            .tech{
+                margin-left: 50%;
+                margin-top: 69%;
+            }
+            body {
+                padding-left: 3%;
+                padding-right: 3%;
+            }
+            #web, #cv, #graphisme{
+                font-size: min(6.5vw, 53vh);
+                font-family: Rumble Brave;
+                color: white;
+                margin: auto 5% auto 20%;
             }
         }            
 .logos {
@@ -178,12 +196,4 @@ a {
     margin-top: 1vw;
     margin-left: 3%;
 }
-.tech {
-    display: flex;
-    flex-direction: row;
-    height: 5vw;
-    width: 29vw;
-    margin-left: 31%;
-    margin-top: 43%;
-    position: absolute;
-}
+
